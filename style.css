@@ -1,0 +1,311 @@
+.body {
+    background: url('https://github.com/PaulaB03/Single-Page-Application/blob/master/Pictures/background.jpg?raw=true');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.title0 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(40, 58, 22);
+}
+
+.subtitle {
+    font-family: 'Playfair Display', serif;
+    width: 1200px;
+    font-size: 20px;
+    margin: 0 auto 30px auto;
+    margin-bottom: 0;
+    padding: 30px 20px;
+    color: rgb(40, 58, 22);
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    margin: 0 auto 20px auto;
+    padding: 0px 20px;
+}
+
+.button {
+    background: rgba(255, 255, 255, 0.486);
+    margin-bottom: 0;
+    padding: 30px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 15px 15px;
+    background: rgba(255, 255, 255, 0.486);
+    width: 1200px;
+    margin: auto;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+article {
+    background: rgba(141, 139, 139, 0.315);
+    display: grid;
+    grid-template-columns: 1.7fr 0.3fr;
+    grid-template-rows: 1.8fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "picture picture"
+      "info actions";
+}
+
+.picture { 
+    grid-area: picture; 
+    border: 1.5px solid black;
+    border-radius: 5px;
+    width: 90%;
+    height: 80%;
+    margin: 15px auto 0px auto;
+}
+
+.info_container {
+    grid-area:info;
+    margin: 20px 0 20px 30px;
+}
+
+.actions_container {
+    grid-area: actions;
+    text-align: right;
+    margin: 0px 30px 20px 0px;
+}
+
+.title, .author { 
+    text-align: left;
+    margin: 0;
+}
+
+.actions_btn {
+    border: none;
+    background: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.footer {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.486);
+    width: 1200px;
+    margin: 20px auto 30px auto;
+    padding: 1px 20px;
+    border-radius: 10px;
+}
+
+.about {
+    font-family: 'Playfair', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.link {
+    text-decoration: wavy;
+    text-decoration: none;
+    color: rgb(36, 54, 18);
+}
+
+.title2 {
+    color: rgb(40, 58, 22);
+    margin-top: -10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.modal__overlay {
+    display: none;
+    position: fixed;
+    left: 100px; 
+    top: 100px; 
+    width: 1500px;
+    height: 500px;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    position: fixed;  
+    left: 250px; 
+    top: 200px; 
+    width: 1000px;
+    height: 400px;
+    background: white;
+    box-shadow: 0 0 5px 0.5px;
+}
+
+.modal__content {
+    padding: 50px 75px;
+}
+
+.inputs__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.input {
+    width: 400px;
+    height: 35px;
+    border: 1px solid #9b9b9b;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Cardo', serif;
+    padding: 0 5px;
+    margin-bottom: 25px;
+}
+
+.input--img {
+    width: 840px;
+}
+
+.textarea {
+    display: block;
+    border: 1px solid #9b9b9b;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Cardo', serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.textarea:last-of-type {
+    margin-top: 20px;
+}
+
+.modal__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+label {
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    right: 20px;
+    top: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+label:before {
+    position: absolute;
+    content: '';
+    width:20px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    background: #000;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+label.active:before {
+    left: 24px;
+    background: #fff;
+}
+
+body.night {
+    background: url('https://github.com/PaulaB03/Single-Page-Application/blob/master/Pictures/background-dark.jpg?raw=true');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.title0.night, .subtitle.night {
+    color:#cecece;
+}
+
+.main.night, .footer.night {
+    background: rgba(0, 0, 0, 0.589);
+}
+
+.button.night {
+    background: rgba(0, 0, 0, 0.589);
+    color: white;
+}
+
+.link.night {
+    color:rgb(182, 182, 184);
+}
+
+.modal.night {
+    background: black;
+  
+}
+
+.title2.night {
+    color: white;
+}
+
+@media (max-width: 990px) {
+    .nav, .footer, .main {
+        width: 90%;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .button {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .subtitle {
+        padding-left: 0%;
+    }
+    .modal {
+        width: 500px;
+        left: 150px;
+    }
+    .modal__buttons {
+        margin-top: -35px;
+    }
+}
+
+@media (max-width: 767px) {
+    #dark-change, .subtitle {
+        display: none;
+    }
+    .main, .footer {
+        width: 90%;
+    }
+    .nav {
+        display: inline;
+    }
+    .button {
+        width: 90%;
+        margin-top: 0px;
+    }
+    .modal {
+        width: 350px;
+        left: 40px;
+    }
+    .inputs__container {
+        margin-top: 0px;
+    }
+    .modal__buttons {
+        margin-top: -10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 50px;
+
+    }
+}
