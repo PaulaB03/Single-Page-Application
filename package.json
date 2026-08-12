@@ -1,0 +1,30 @@
+{
+  "name": "single-page-application",
+  "version": "1.0.0",
+  "description": "- Instalati [nodeJS](https://nodejs.org/en/) daca este necesar.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulaB03/Single-Page-Application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/PaulaB03/Single-Page-Application/issues"
+  },
+  "homepage": "https://github.com/PaulaB03/Single-Page-Application#readme",
+  "dependencies": {
+    "body-parser": "^2.3.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "json-server": "^1.0.0-beta.15",
+    "morgan": "^1.11.0",
+    "uuidv1": "^1.6.14"
+  }
+}

@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Link SPA static files 
-app.use("/", express.static('spa'));
+app.use(express.static(__dirname));
 
 // Create
 app.post("/places", (req, res) => {
