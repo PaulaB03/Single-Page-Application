@@ -1,5 +1,10 @@
 # Single-Page-Application
 
+## Demo
+
+<img src="https://github.com/PaulaB03/Single-Page-Application/blob/master/Pictures/ss1.png">
+<img src="https://github.com/PaulaB03/Single-Page-Application/blob/master/Pictures/ss2.png">
+
 ## Pornire server
 
 - Instalati [nodeJS](https://nodejs.org/en/) daca este necesar.
